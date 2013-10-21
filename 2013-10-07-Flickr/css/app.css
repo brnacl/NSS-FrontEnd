@@ -1,7 +1,7 @@
 .photo {
   float: left;
   width: 220px;
-  height: 250px;
+  height: 220px;
   border: 1px dashed #cccccc;
-  margin: 10px;
+  margin: 10px 10px 0 0;
   background-size: cover; }
