@@ -1,0 +1,14 @@
+header
+  .row
+    .small-4.columns
+      img#logo(src='/images/logo.png')
+    nav.small-8.columns
+      ul.nav
+        li: a.button.small.radius.expand(href='/') Home
+        li: a.button.small.radius.expand(href='/songs') Songs
+        li: a.button.small.radius.expand(href='/genres') Genres
+        li: a.button.small.radius.expand.success(href='/songs/new') New Song
+        li: a.button.small.radius.expand.success(href='/genres/new') New Genre
+.row
+    .small-12.columns
+      h1.subheader= heading

@@ -1,0 +1,146 @@
+@base: #ffffff;
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+@blue: rgb(58,85,130);
+@text: rgb(255,255,255);
+
+.error{
+  font-family: 'Droid Sans Mono', sans-serif;
+
+  .error-master{
+    color: #ff0099;
+    font-size: 13px;
+  }
+  .error-list{
+    color: #6600ff;
+    font-size: 11px;
+    list-style-position: inside;
+  }
+}
+
+table{
+  form{
+    margin: 0px;
+  }
+}
+
+.chkbox{
+  margin: 5px;
+  float: left;
+  width: 150px;
+
+  span{
+    padding-left: 3px;
+    color: #339933;
+  }
+
+  input{
+    margin: 0px;
+  }
+}
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+  padding-bottom: 50px;}  /* must be same height as the footer */
+
+#footer {
+  background-color: @blue;
+  position: relative;
+  margin-top: -50px; /* negative value of footer height */
+  height: 50px;
+  clear:both;
+  color: @text;
+
+  a {
+    display: inline-block;
+
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  .copyright {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+  }
+}
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+
+body{
+  background-color: @base;
+}
+
+header {
+  background-color: @blue;
+}
+
+#logo {
+  margin-top: 25px;
+}
+
+ul.nav {
+  display: inline-block;
+  float: right;
+  list-style-type: none;
+  margin-top: 50px;
+  li {
+    display: block;
+    float: left;
+    width: 100px;
+    padding: 10px;
+
+  }
+}
+
+
+ul.updates {
+  display: inline-block;
+  list-style-type: none;
+  /*margin-top: 50px;*/
+  li {
+    display: block;
+    float: left;
+    width: 85px;
+    /*padding: 10px;*/
+
+  }
+}
+
+#lyrics {
+  height: 250px;
+}
+
+a.edit.button, button.delete {
+  width: 75px;
+}
+
+.song {
+  .title {
+    display: block;
+    float: left;
+    vertical-align: middle;
+    color: red;
+  }
+  .duration {
+      position: relative;
+      display: block;
+      margin-top: 20px;
+
+      font-size: 20px;
+    }
+  .artist {
+    clear:both;
+  }
+}
